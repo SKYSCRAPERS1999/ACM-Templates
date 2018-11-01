@@ -1,14 +1,12 @@
-const int NMAX = 1<<21;
-
+const int NMAX = 1<<19;
+#define rep(i,n) for(int i=0;i<(n);i++)
 // 998244353 = 7*17*2^23+1, G = 3
 const int P = 1004535809, G = 3; // = 479*2^21+1
-
 struct NTT{
     int rev[NMAX];
     LL omega[NMAX], oinv[NMAX];
     int g, g_inv; // g: g_n = G^((P-1)/n)
     int K, N;
-
     LL powmod(LL b, LL e){
         LL r = 1;
         while (e){
@@ -32,7 +30,6 @@ struct NTT{
             }
         }
     }
-
     void _ntt(LL* a, LL* w){
         rep (i, N) if (i < rev[i]) swap(a[i], a[rev[i]]);
         for (int l = 2; l <= N; l *= 2){
@@ -45,7 +42,6 @@ struct NTT{
                 }
         }
     }
-
     void ntt(LL* a){_ntt(a, omega);}
     void intt(LL* a){
         LL inv = powmod(N, P-2);
