@@ -7,7 +7,6 @@ int get(int s) { return s > 1 ? 32 - __builtin_clz(s - 1) : 0;}
 namespace NTT {
     LL qpow(LL b, LL p) { return !p?1:qpow(b*b%P,p/2)*(p&1?b:1)%P; }
     LL inv(LL b) { return qpow(b,P-2); }
-
     void ntt(vl& a) {
         int n = a.size(), x = get(n);
         vl b(n), omega(n);
@@ -22,20 +21,17 @@ namespace NTT {
             swap(a,b);
         }
     }
-
     void ntt_rev(vl& a) {
         ntt(a);
         LL r = inv(a.size());
         rep(i,a.size()) a[i] = a[i] * r % P;
         reverse(a.begin() + 1, a.end());
     }
-
     vl brute(vl& a, vl& b) {
         vl c(a.size()+b.size()-1);
         rep(i,a.size()) rep(j,b.size()) c[i+j] = (c[i+j]+a[i]*b[j])%P;
         return c;
     }
-
     vl conv(vl a, vl b) {
         int s = a.size()+b.size()-1, L = get(s), n = 1<<L;
         if (s <= 0) return {};
