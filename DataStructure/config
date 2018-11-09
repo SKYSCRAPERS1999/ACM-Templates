@@ -1,4 +1,5 @@
 <AddMul-SegmentTree> <AddMul_SegmentTree.cpp>
+<DynamicSegmentTree> <DynamicSegmentTree.cpp>
 <BIT-2D-range> <BIT_2D_range.cpp>
 <BIT> <BIT.cpp>
 <BIT-Range> <BIT_Range.cpp>

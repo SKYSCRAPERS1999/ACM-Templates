@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.18)  18 OCT 2018 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.18)  9 NOV 2018 10:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -271,7 +271,8 @@ Missing character: There is no Œ in font cmtt9!
 (./Graph/Maxflow_EK.cpp [11]) (./Graph/MCMaxFlow.cpp) [12] (./Graph/Prim.cpp)
 (./Graph/SCC_Tarjan.cpp [13]) (./Graph/Spfa.cpp) [14] (./Graph/TopoSort.cpp)
 (./Graph/VBCC_Tarjan.cpp [15]) (./DataStructure/AddMul_SegmentTree.cpp [16]
-[17] [18]) (./DataStructure/BIT_2D_range.cpp [19]
+[17] [18]) (./DataStructure/DynamicSegmentTree.cpp [19])
+(./DataStructure/BIT_2D_range.cpp [20]
 Missing character: There is no â in font cmtt9!
 Missing character: There is no ˆ in font cmtt9!
 Missing character: There is no ’ in font cmtt9!
@@ -373,7 +374,7 @@ Missing character: There is no æ in font cmtt9!
 Missing character: There is no – in font cmtt9!
 Missing character: There is no ° in font cmtt9!
 )
-(./DataStructure/BIT_Range.cpp [20]
+(./DataStructure/BIT_Range.cpp [21]
 Missing character: There is no ä in font cmtt9!
 Missing character: There is no ¿ in font cmtt9!
 Missing character: There is no ® in font cmtt9!
@@ -386,15 +387,15 @@ Missing character: There is no ® in font cmtt9!
 Missing character: There is no æ in font cmtt9!
 Missing character: There is no ” in font cmtt9!
 Missing character: There is no ¹ in font cmtt9!
-) (./DataStructure/DSU.cpp [21])
-(./DataStructure/Hash-matching.cpp) (./DataStructure/HLD.cpp [22] [23])
-(./DataStructure/Kmp.cpp [24]) (./DataStructure/Mo.cpp [25])
-(./DataStructure/PresidengTree.cpp [26]) (./DataStructure/SegmentTree.cpp)
-[27] (./DataStructure/SegmentTree_Range.cpp) (./DataStructure/SlidingWindow.cpp
-[28]) (./DataStructure/SparseTable.cpp) (./DataStructure/Splay.cpp [29]
-[30] [31]) (./DataStructure/SuffixArray.cpp [32])
-(./DataStructure/SuffixArrayDC3.cpp [33]) (./DataStructure/Treap_all.cpp
-[34]
+) (./DataStructure/DSU.cpp [22])
+(./DataStructure/Hash-matching.cpp) (./DataStructure/HLD.cpp [23] [24])
+(./DataStructure/Kmp.cpp [25]) (./DataStructure/Mo.cpp [26])
+(./DataStructure/PresidengTree.cpp [27]) (./DataStructure/SegmentTree.cpp)
+[28] (./DataStructure/SegmentTree_Range.cpp) (./DataStructure/SlidingWindow.cpp
+[29]) (./DataStructure/SparseTable.cpp) (./DataStructure/Splay.cpp [30]
+[31] [32]) (./DataStructure/SuffixArray.cpp [33])
+(./DataStructure/SuffixArrayDC3.cpp [34]) (./DataStructure/Treap_all.cpp
+[35]
 Overfull \hbox (108.73317pt too wide) in paragraph at lines 92--93
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][]  
@@ -406,14 +407,13 @@ Overfull \hbox (108.73317pt too wide) in paragraph at lines 93--94
 ][][][][][][][][][][][][][][][]  
  []
 
-[35] [36] [37]) (./DataStructure/Treap.cpp [38] [39] [40])
-(./DataStructure/Treap_Range.cpp [41] [42]) (./DataStructure/Trie.cpp)
-(./Math/BernolliNumber.cpp [43]) (./Math/BM.cpp [44]) (./Math/Det.cpp [45])
-(./Math/Exgcd.cpp) (./Math/FFT.cpp [46]) (./Math/FFT_old.cpp [47] [48])
-(./Math/FWT.cpp [49]) (./Math/GauseElimination.cpp [50]) (./Math/LinearBase.cpp
-) (./Math/LinearRecursion.cpp [51]) (./Math/LIS.cpp) (./Math/MatrixInv.cpp
-[52]) [53] (./Math/Matrix_qpow.cpp) (./Math/MatrixQPow.cpp [54])
-(./Math/MillerRabin.cpp
+[36] [37] [38]) (./DataStructure/Treap.cpp [39] [40] [41])
+(./DataStructure/Treap_Range.cpp [42] [43]) (./DataStructure/Trie.cpp)
+(./Math/BernolliNumber.cpp [44]) (./Math/BM.cpp [45]) (./Math/Det.cpp [46])
+(./Math/Exgcd.cpp) (./Math/FWT.cpp [47]) (./Math/GauseElimination.cpp [48])
+(./Math/LinearBase.cpp) (./Math/LinearRecursion.cpp [49]) (./Math/LIS.cpp
+[50]) (./Math/MatrixInv.cpp [51]) (./Math/Matrix_qpow.cpp)
+(./Math/MatrixQPow.cpp [52]) (./Math/MillerRabin.cpp
 Missing character: There is no å in font cmtt9!
 Missing character: There is no  in font cmtt9!
 Missing character: There is no ˆ in font cmtt9!
@@ -432,8 +432,9 @@ Missing character: There is no ˆ in font cmtt9!
 Missing character: There is no æ in font cmtt9!
 Missing character: There is no • in font cmtt9!
 Missing character: There is no ° in font cmtt9!
- [55]) (./Math/MOD.cpp [56]) (./Math/NTT.cpp [57])
-(./Math/PolynomialInverse.cpp [58]) [59] (./Math/PolynomialSquareRoot.cpp
+ [53]) (./Math/MOD.cpp
+[54]) (./Math/FFT.cpp [55]) (./Math/NTT.cpp) [56] (./Math/NTT_3MOD.cpp [57])
+(./Math/PolynomialInverse.cpp [58] [59]) (./Math/PolynomialSquareRoot.cpp
 [60] [61]) (./Math/PrimeCount.cpp
 Missing character: There is no â in font cmtt9!
 Missing character: There is no ˆ in font cmtt9!
@@ -472,7 +473,7 @@ Missing character: There is no â in font cmtt9!
 Missing character: There is no ˆ in font cmtt9!
 Missing character: There is no ’ in font cmtt9!
  [62]) (./Math/PrimitiveRoot.cpp [63])
-(./Math/Sieves.cpp [64]) (./Math/Simplex.cpp
+(./Math/Sieves.cpp [64] [65]) (./Math/Simplex.cpp
 Missing character: There is no è in font cmtt9!
 Missing character: There is no ¿ in font cmtt9!
 Missing character: There is no ™ in font cmtt9!
@@ -1382,7 +1383,6 @@ Missing character: There is no ® in font cmtt9!
 Missing character: There is no ã in font cmtt9!
 Missing character: There is no € in font cmtt9!
 Missing character: There is no ‚ in font cmtt9!
- [65]
 Missing character: There is no å in font cmtt9!
 Missing character: There is no ¦ in font cmtt9!
 Missing character: There is no ‚ in font cmtt9!
@@ -1930,8 +1930,8 @@ Missing character: There is no  in font cmtt9!
 Missing character: There is no ï in font cmtt9!
 Missing character: There is no ¼ in font cmtt9!
 Missing character: There is no  in font cmtt9!
-) (./Math/SumMiu.cpp
-[67]) (./Math/SumPhi.cpp [68]) [69] (./Java/BigInteger.java
+ [67]) (./Math/SumMiu.cpp [68]) (./Math/SumPhi.cpp [69]) (./Java/BigInteger.jav
+a
 Missing character: There is no è in font cmtt9!
 Missing character: There is no ¿ in font cmtt9!
 Missing character: There is no ” in font cmtt9!
@@ -2757,8 +2757,8 @@ Missing character: There is no ‚ in font cmtt9!
 Missing character: There is no æ in font cmtt9!
 Missing character: There is no ˆ in font cmtt9!
 Missing character: There is no – in font cmtt9!
-)
-(./Java/BinarySearch.java) (./Java/FFT.java [70] [71]) (./Java/IO.java
+) [70]
+(./Java/BinarySearch.java) (./Java/FFT.java [71] [72]) (./Java/IO.java
 Missing character: There is no ä in font cmtt9!
 Missing character: There is no ½ in font cmtt9!
 Missing character: There is no ¿ in font cmtt9!
@@ -2810,15 +2810,15 @@ Missing character: There is no › in font cmtt9!
 Missing character: There is no ã in font cmtt9!
 Missing character: There is no € in font cmtt9!
 Missing character: There is no ‚ in font cmtt9!
- [72])
+)
 (./Java/MatrixPow_BigInteger.java [73]) (./Java/Pell.java
 Overfull \hbox (4384.80846pt too wide) in paragraph at lines 12--14
 [][][][][][][][][][][][][][]  
  []
 
-[74]) (./Java/STL.java) (./Others/2SAT.cpp [75]) (./Others/Euclid.cpp)
-(./Others/int128.cpp [76]) (./Others/IO.cpp) (./Others/Largest_Rectangle.cpp)
-(./Others/Multiple_Backpack.cpp [77]) (./Others/Sum_over_subsets.cpp) [78]
+[74]) (./Java/STL.java [75]) (./Others/2SAT.cpp) [76] (./Others/Euclid.cpp)
+(./Others/int128.cpp) (./Others/IO.cpp) (./Others/Largest_Rectangle.cpp
+[77]) (./Others/Multiple_Backpack.cpp) (./Others/Sum_over_subsets.cpp [78])
 (./Others/SweepLine.cpp [79]
 Missing character: There is no è in font cmtt9!
 Missing character: There is no ¿ in font cmtt9!
@@ -2862,13 +2862,13 @@ Missing character: There is no ¢ in font cmtt9!
 Missing character: There is no ç in font cmtt9!
 Missing character: There is no § in font cmtt9!
 Missing character: There is no ¯ in font cmtt9!
-) (./Others/UsefulThings.cpp [80]) [81]
+ [80]) (./Others/UsefulThings.cpp) [81]
 (./template.aux) ) 
 Here is how much of TeX's memory you used:
- 4598 strings out of 494953
- 60603 string characters out of 6180976
+ 4603 strings out of 494953
+ 60756 string characters out of 6180976
  250651 words of memory out of 5000000
- 7642 multiletter control sequences out of 15000+600000
+ 7644 multiletter control sequences out of 15000+600000
  8361 words of font info for 30 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  33i,6n,58p,1102b,1515s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2878,7 +2878,7 @@ Here is how much of TeX's memory you used:
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on template.pdf (84 pages, 189068 bytes).
+Output written on template.pdf (84 pages, 189919 bytes).
 PDF statistics:
  300 PDF objects out of 1000 (max. 8388607)
  205 compressed objects within 3 object streams

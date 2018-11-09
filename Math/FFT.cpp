@@ -1,37 +1,49 @@
-const int NMAX = 1<<19;
 #define rep(i,n) for(int i=0;i<(n);i++)
 typedef complex<double> cplx;
+typedef vector<cplx> vc;
+const int NMAX = 1 << 21;
+int get(int s) { return s > 1 ? 32 - __builtin_clz(s - 1) : 0;}
 struct FFT{
     int rev[NMAX];
     cplx omega[NMAX], oinv[NMAX];
-    int K, N;
-    FFT(int k){
-        K = k; N = 1 << k;
-        rep (i, N){
-            rev[i] = (rev[i>>1]>>1) | ((i&1)<<(K-1));
-            omega[i] = polar(1.0, 2.0 * PI / N * i);
-            oinv[i] = conj(omega[i]);
-        }
-    }
-    void dft(cplx* a, cplx* w){
-        rep (i, N) if (i < rev[i]) swap(a[i], a[rev[i]]);
-        for (int l = 2; l <= N; l *= 2){
+    void dft(vc &a, cplx* w){
+        int n = a.size();
+        rep (i, n) if (i < rev[i]) swap(a[i], a[rev[i]]);
+        for (int l = 2; l <= n; l *= 2){
             int m = l/2;
-            for (cplx* p = a; p != a + N; p += l)
+            for (int p = 0; p < n; p += l)
                 rep (k, m){
-                    cplx t = w[N/l*k] * p[k+m];
-                    p[k+m] = p[k] - t; p[k] += t;
+                    cplx t = w[n/l*k] * a[p+k+m];
+                    a[p+k+m] = a[p+k] - t; a[p+k] += t;
                 }
         }
     }
-    void fft(cplx* a){dft(a, omega);}
-    void ifft(cplx* a){
+    void fft(vc &a){ dft(a, omega); }
+    void ifft(vc &a){
+        int n = a.size();
         dft(a, oinv);
-        rep (i, N) a[i] /= N;
+        rep (i, n) a[i] /= n;
     }
-    void conv(cplx* a, cplx* b){
-        fft(a); fft(b);
-        rep (i, N) a[i] *= b[i];
+    vc brute(vc& a, vc& b) {
+        vc c(a.size()+b.size()-1);
+        rep(i,a.size()) rep(j,b.size()) c[i+j] += a[i]*b[j];
+        return c;
+    }
+    vc conv(vc a, vc b){
+        int s = a.size()+b.size()-1, k = get(s), n = 1<<k;
+        if (s <= 0) return {};
+        if (s <= 200) return brute(a,b);
+        rep (i, n){
+            rev[i] = (rev[i>>1]>>1) | ((i&1)<<(k-1));
+            omega[i] = polar(1.0, 2.0 * PI / n * i);
+            oinv[i] = conj(omega[i]);
+        }
+        a.resize(n); fft(a);
+        b.resize(n); fft(b);
+        rep(i,n) a[i] *= b[i];
         ifft(a);
+        a.resize(s);
+        return a;
     }
-};
+} fft;
+

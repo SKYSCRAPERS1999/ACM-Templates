@@ -2,8 +2,6 @@
 <BM> <BM.cpp>
 <Det> <Det.cpp>
 <Exgcd> <Exgcd.cpp>
-<FFT> <FFT.cpp>
-<FFT-old> <FFT_old.cpp>
 <FWT> <FWT.cpp>
 <GauseElimination> <GauseElimination.cpp>
 <LinearBase> <LinearBase.cpp>
@@ -14,7 +12,9 @@
 <MatrixQPow> <MatrixQPow.cpp>
 <MillerRabin> <MillerRabin.cpp>
 <MOD> <MOD.cpp>
+<FFT> <FFT.cpp>
 <NTT> <NTT.cpp>
+<NTT-3MOD> <NTT_3MOD.cpp>
 <PolynomialInverse> <PolynomialInverse.cpp>
 <PolynomialSquareRoot> <PolynomialSquareRoot.cpp>
 <PrimeCount> <PrimeCount.cpp>
