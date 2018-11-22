@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.18)  9 NOV 2018 10:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.18)  22 NOV 2018 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2878,7 +2878,7 @@ Here is how much of TeX's memory you used:
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on template.pdf (84 pages, 189919 bytes).
+Output written on template.pdf (84 pages, 190076 bytes).
 PDF statistics:
  300 PDF objects out of 1000 (max. 8388607)
  205 compressed objects within 3 object streams
